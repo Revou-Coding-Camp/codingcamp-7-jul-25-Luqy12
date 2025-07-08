@@ -41,10 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const delBtn = document.createElement('button');
       delBtn.textContent = 'Delete';
-      delBtn.style.backgroundColor = '#dc3545';
-      delBtn.style.color = 'white';
-      delBtn.style.border = 'none';
-      delBtn.style.cursor = 'pointer';
       delBtn.onclick = () => {
         todos = todos.filter(t => t.id !== todo.id);
         renderTodos();
